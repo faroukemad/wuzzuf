@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route,Routes,BrowserRouter as Router } from "react-router-dom";
+import 'primereact/resources/themes/saga-blue/theme.css';  
+import 'primereact/resources/primereact.min.css';          
+import 'primeicons/primeicons.css'; 
+import SearchResults from "./components/SearchResults";
+import Job from "./components/Job";
+import Skill from "./components/Skill";
+import Header from "./components/Header";
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Header/>
+     <Routes>
+     <Route path="/" element={<SearchResults />} />
+     <Route path="/job/:jobId" element={ <Job/>}/>
+     <Route path="/skill/:skillId" element={ <Skill/>}/>
+     </Routes>
     </div>
+    </Router>
   );
 }
 

@@ -1,0 +1,130 @@
+.result{
+     background: #e9e9e9;
+    width: 100%;
+}
+.result-wrapper{
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+padding: 20px 50px;
+    flex-direction: column;
+}
+.result-alljobs{
+font-size: 48px;
+font-weight: 700;
+text-align: left;
+color: black;
+}
+.results-all-results{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+   
+    margin-bottom: 150px;
+}
+.results-result-cont{
+    background-color: white;
+    padding: 2rem ;
+    width: 48%;
+    cursor: pointer;
+}
+.results-result-cont-history{
+    width: 45%;
+    
+}
+.results-all-results-history{
+    width: 75%;
+}
+.result-grade{
+font-size: 24px;
+font-weight: 700;
+text-align: left;
+color: black;
+}
+.result-skills{
+font-size: 18px;
+font-weight: 400;
+text-align: left;
+color: black;
+margin-top: 20px;
+}
+.result-details{
+font-size: 18px;
+font-weight: 400;
+text-align: left;
+color: black;
+text-decoration: underline;margin-top: 30px;
+
+
+}
+.result-skills-cont{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 10px;
+}
+.result-skill{
+font-size: 18px;
+font-weight: 400;
+text-align: left;
+background: #C4C4C4;
+padding: .5rem 0.75rem;
+border-radius: 5px;
+color: black;
+}
+.results-with-history{
+    display: flex;
+    margin-top: 50px;
+}
+.results-history{
+    padding: 2rem 1.5rem;
+    background: #D9D9D9;
+    width: 450px;
+}
+.results-search-history{
+    font-family: Roboto;
+font-size: 24px;
+font-weight: 700;
+text-align: left;
+
+}
+.results-search-li{
+    font-family: Roboto;
+font-size: 18px;
+font-weight: 400;
+text-align: left;
+
+}
+$width: 662px;
+
+@media (max-width:#{$width}){
+    .p-inputtext {
+    font-size: 20px;
+    }
+    .search-input{
+        padding: 10px;
+    }
+    .results-result-cont{
+        padding: 1rem;
+    }
+    .result-grade{
+        font-size: 20px;
+    }
+    .result-alljobs{
+        font-size: 35px;
+    }
+    .result-wrapper{
+        padding: 20px;
+    }
+    .results-result-cont{
+        width: 100%;
+    }
+    .results-with-history{
+        flex-direction: column;
+    }
+    .results-all-results-history{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+

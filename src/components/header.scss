@@ -1,0 +1,91 @@
+.header {
+    height: 80px;
+    width: 100vw;
+    border-bottom: 3px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center; position: relative;
+}
+
+.header-wrapper {
+    width: 90%;
+    max-width: 1450px;
+    display: flex;
+  
+    align-items: center;
+    justify-content: space-between;
+}
+.header-lap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.header-jobs {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    color: black;
+}
+
+.header-navs{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header-nav{
+font-size: 18px;
+font-weight: 400;
+color: black;
+text-decoration: none;
+}
+.bm-menu-wrap {
+    width: 200px !important;
+    top: 0;
+}
+
+.bm-burger-button {
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    left: 36px;
+    top: 36px;
+   display: none;
+}
+
+.bm-burger-bars {
+    background: #373a47;
+    height: 10% !important;
+}
+
+.bm-menu {
+    background: #373a47;
+    padding: 1rem 1.5rem 0;
+    font-size: 1.15em;
+}
+
+.bm-item-list a {
+    display: block;
+    padding: 0.5em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.bm-overlay {
+    background: none !important;
+}
+.header-menu-title{
+margin-bottom: 30px;
+}
+$width: 662px;
+
+@media (max-width:#{$width}){
+    .bm-burger-button {
+    display: block;
+    }
+    .header-lap{
+        display: none;
+    }
+}
